@@ -2,6 +2,8 @@
 
 https://private-user-images.githubusercontent.com/30500847/565807180-12530801-518e-4879-b28a-00048867d189.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM4NjIzODQsIm5iZiI6MTc3Mzg2MjA4NCwicGF0aCI6Ii8zMDUwMDg0Ny81NjU4MDcxODAtMTI1MzA4MDEtNTE4ZS00ODc5LWIyOGEtMDAwNDg4NjdkMTg5Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzE4VDE5MjgwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyYzUwODQ4Y2RlZmIyYmI3YmNmNjViNzViM2JlMDkyZDhlYTJiNDE1YmJhMGI0NjdhZWY1ZmQ2OTdmODgxZTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BvM_SKed4rGrLIaJZ0F-LGxQvs1OlREgXPg2bfxcUg4
 
+See more samples on my [Xitter post](https://x.com/ZDi____/status/2034366015652667596)
+
 VITS EVOlution is an open source text to speech stack model around zero-shot voice cloning and low latency. It includes an ONNX speaker encoder, TTS inference, uses DeepPhonemizer for phonemes (MIT), and a voice blending option that averages multiple speaker embeddings to create new voices.
 
 ## Features
@@ -88,4 +90,4 @@ The app lets you:
 - test zero-shot cloning and blended voices from the browser
 
 ## Contact
-Hey you? Like [my](https://zdisket.github.io/page.html) stuff? [email me](mailto:nika109021@gmail.com) and let's build something great together.
+Hey you? Like [my](https://zdisket.github.io/page.html) stuff? [email me](mailto:nika109021@gmail.com) or [DM me on Xitter](https://x.com/ZDi____) for any inquiries you may have.
