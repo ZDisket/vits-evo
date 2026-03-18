@@ -2,29 +2,22 @@
 
 https://private-user-images.githubusercontent.com/30500847/565807180-12530801-518e-4879-b28a-00048867d189.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM4NjIzODQsIm5iZiI6MTc3Mzg2MjA4NCwicGF0aCI6Ii8zMDUwMDg0Ny81NjU4MDcxODAtMTI1MzA4MDEtNTE4ZS00ODc5LWIyOGEtMDAwNDg4NjdkMTg5Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzE4VDE5MjgwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyYzUwODQ4Y2RlZmIyYmI3YmNmNjViNzViM2JlMDkyZDhlYTJiNDE1YmJhMGI0NjdhZWY1ZmQ2OTdmODgxZTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BvM_SKed4rGrLIaJZ0F-LGxQvs1OlREgXPg2bfxcUg4
 
-VITS EVOlution is an open source ONNX text to speech stack built around zero-shot voice cloning. It includes an ONNX speaker encoder, ONNX TTS inference, uses DeepPhonemizer for phonemes (MIT), and a voice blending workflow that averages multiple speaker embeddings into a new synthetic voice.
+VITS EVOlution is an open source text to speech stack model around zero-shot voice cloning and low latency. It includes an ONNX speaker encoder, TTS inference, uses DeepPhonemizer for phonemes (MIT), and a voice blending option that averages multiple speaker embeddings to create new voices.
 
-## Highlights
+## Features
 
 - Zero-shot voice cloning from a reference clip
 - Voice blending with two or more reference embeddings
 - ONNX release format for both the speaker encoder and the TTS model
-- Apache 2.0 stack from speaker encoder to phonemizer to model
+- Permissive licenses for all the stack
 - CPU inference at about `0.18` real-time factor on an `Intel(R) Xeon(R) Platinum 8470`, or about `5.6x` faster than real time
 
-
-## How it works
-
-1. Convert text into phonemes with DeepPhonemizer.
-2. Extract a speaker embedding from one or more reference clips with the speaker encoder.
-3. Optionally average multiple embeddings for voice blending.
-4. Run the ONNX TTS model to generate audio.
 
 ## Released models
 
 | Model | Type | Checkpoint | Hugging Face demo | Colab demo |
 | --- | --- | --- | --- | --- |
-| `vits-evo-zero-shot-v1` | Zero-shot ONNX TTS | [Google Drive](https://drive.google.com/file/d/1pzLZCm2rr9kdS6GSBlOckFdE2pdQTL3W/view?usp=sharing) | [HF Space](https://huggingface.co/spaces/ZDisket/vits-evo-zs1) | [Coming soon](https://example.com/colab) |
+| `vits-evo-zero-shot-v1` | Zero-shot TTS (ONNX) | [Google Drive](https://drive.google.com/file/d/1pzLZCm2rr9kdS6GSBlOckFdE2pdQTL3W/view?usp=sharing) | [HF Space](https://huggingface.co/spaces/ZDisket/vits-evo-zs1) | [Google Colab](https://drive.google.com/file/d/1Dx19cyRUQ3eTnsWEbchg8pNc81uW9GkK/view?usp=sharing) |
 
 ## Minimal run
 
@@ -65,7 +58,7 @@ tts.save_wav("output.wav", audio)
 
 ## Voice blending
 
-Voice blending averages two or more speaker embeddings to create a new synthetic voice identity.
+Voice blending averages two or more speaker embeddings to create a new voice.
 
 ```python
 embedding = speaker_encoder.make_embedding(
