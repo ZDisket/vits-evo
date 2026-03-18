@@ -1,0 +1,10 @@
+{
+  "sampling_rate": 48000,
+  "add_blank": true,
+  "cleaned_text": true,
+  "text_cleaners": [
+    "english_cleaners2"
+  ],
+  "n_speakers": 0,
+  "zero_shot_speakers": true
+}
